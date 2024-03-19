@@ -1,0 +1,71 @@
+@keyframes wave {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 1000px 0; /* Adjust this value based on your wave width */
+    }
+  }
+  .payment-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .payment-option input {
+    display: none;
+  }
+  
+  .payment-label {
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  
+  .payment-label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000; /* Border color for the unselected state */
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #fff; /* Background color for the unselected state */
+  }
+  
+  .payment-option input:checked + .payment-label:before {
+    background-color: #ff0e2c; /* Background color for the selected state */
+    border-color: #000000; /* Border color for the selected state */
+  }
+  
+  /* Add this CSS to your stylesheet or component */
+  .address-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .address-option input {
+    display: none;
+  }
+  
+  .address-label {
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  
+  .address-label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000; /* Border color for the unselected state */
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #fff; /* Background color for the unselected state */
+  }
+  
+  .address-option input:checked + .address-label:before {
+    background-color: #ff001e; /* Background color for the selected state */
+    border-color: #000000; /* Border color for the selected state */
+  }
+  
